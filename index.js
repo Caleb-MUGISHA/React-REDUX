@@ -1,6 +1,10 @@
 const redux = require("redux");
-
+const combineReducers = redux.combineReducers;
+const applyMiddleware = redux.applyMiddleware;
 const createStore = redux.createStore;
+const reduxLogger = require("redux-logger");
+const logger = reduxLogger.createLogger();
+
 const BUY_CAKE = "BUY_CAKE";
 const BUY_ICECREAM = "BUY_ICECREAM";
 function buycake() {
@@ -17,13 +21,15 @@ function buyIceCream() {
 }
 // (previousState, action) => newState
 
-const initialState = {
+const initialCakeState = {
   numOfCakes: 10,
+};
+const initialIceCreamState = {
   numOfIcecream: 25,
 };
 // a reducer is basically a listener to actions
 
-const reducer = (state = initialState, action) => {
+const cakeReducer = (state = initialCakeState, action) => {
   switch (action.type) {
     case BUY_CAKE:
       return {
@@ -31,6 +37,13 @@ const reducer = (state = initialState, action) => {
         ...state,
         numOfCakes: state.numOfCakes - 1,
       };
+
+    default:
+      return state;
+  }
+};
+const iceCreamReducer = (state = initialIceCreamState, action) => {
+  switch (action.type) {
     case BUY_ICECREAM:
       return {
         // first make a copy of the state
@@ -42,9 +55,15 @@ const reducer = (state = initialState, action) => {
       return state;
   }
 };
+// binding together my reducers
+const rootReducer = combineReducers({
+  cake: cakeReducer,
+  iceCream: iceCreamReducer,
+});
+
 // give the reducer access to the store
-const store = createStore(reducer);
-console.log("initial State: ", store.getState());
+const store = createStore(rootReducer, applyMiddleware(logger));
+
 const unsubscribe = store.subscribe(() =>
   console.log("Updated state: ", store.getState())
 );
