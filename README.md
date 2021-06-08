@@ -1,2 +1,0 @@
-# React-REDUX
-React-REDUX
