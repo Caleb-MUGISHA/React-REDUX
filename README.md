@@ -1,10 +1,10 @@
 # Snack shop App
 
-#### What does this Pull request do?
+#### What does this Pull request do
 
 - This PR demonstrates the principles of Redux by using three simple examples
 
-#### Description of Task to be completed?
+#### Description of Task to be completed
 
 This PR utilizes the Redux principles for the below-listed problems:
 
@@ -12,7 +12,7 @@ This PR utilizes the Redux principles for the below-listed problems:
 - Add buy icecream
 - Add list users from the API: [Link to the API](https://jsonplaceholder.typicode.com/users)
 
-#### How should this be manually tested?
+#### PR Manual Testing
 
 - Clone the repo
 - type `git checkout React-Redux-Brush-up-Resources` in your integrated terminal.
