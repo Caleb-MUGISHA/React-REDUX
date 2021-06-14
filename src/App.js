@@ -10,12 +10,12 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <UserContainer />
-        {/* <ItemContainer cake />
+        {/* <UserContainer /> */}
+        <ItemContainer cake />
         <ItemContainer />
         <HooksCakeContainer />
         <HooksIceCreamContainer />
-        <NewCakeContainer /> */}
+        <NewCakeContainer />
       </div>
     </Provider>
   );
