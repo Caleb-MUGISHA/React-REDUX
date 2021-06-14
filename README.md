@@ -2,7 +2,7 @@
 
 #### What does this Pull request do
 
-- This PR demonstrates the principles of Redux by using three simple examples
+-  demonstration of the principles of Redux by using three simple examples
 
 #### Description of Task to be completed
 
@@ -12,7 +12,7 @@ This PR utilizes the Redux principles for the below-listed problems:
 - Add buy icecream
 - Add list users from the API: [Link to the API](https://jsonplaceholder.typicode.com/users)
 
-#### PR Manual Testing
+####  Manual Testing
 
 - Clone the repo
 - type `git checkout React-Redux-Brush-up-Resources` in your integrated terminal.
