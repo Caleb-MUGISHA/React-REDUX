@@ -2,7 +2,11 @@
 
 - Demonstration of the principles of Redux by using three simple examples
 
+<<<<<<< HEAD
 ## Getting Started
+=======
+-  demonstration of the principles of Redux by using three simple examples
+>>>>>>> 64b33c5a70453b0d2be453104c986cff8efc0daf
 
 These instructions will get you a copy of the project up and running on your local machine for development.
 
@@ -11,7 +15,11 @@ The project is composed of two different parts:
 - Part1: which comprises of redux with no front-end library
 - Part2: comprises of redux integrated with a front-end library.
 
+<<<<<<< HEAD
 ### Prerequisites
+=======
+####  Manual Testing
+>>>>>>> 64b33c5a70453b0d2be453104c986cff8efc0daf
 
 - A web Browser(Google Chrome is highly recommended)
 - A text editor(Visual Studio code is highly recommended)
