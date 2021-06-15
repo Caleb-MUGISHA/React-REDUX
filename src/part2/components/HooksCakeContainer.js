@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { buyCake } from "../redux";
+import { buyCake } from "../index";
 function HooksCakeContainer() {
   const numOfCakes = useSelector((state) => state.cake.numOfCakes);
   const dispatch = useDispatch();
