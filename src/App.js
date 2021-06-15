@@ -1,21 +1,23 @@
 import "./App.css";
-import HooksCakeContainer from "./component/HooksCakeContainer";
 import { Provider } from "react-redux";
-import store from "./redux/store";
-import HooksIceCreamContainer from "./component/HooksIceCreamContainer";
-import NewCakeContainer from "./component/NewCakeContainer";
-import ItemContainer from "./component/ItemContainer";
-import UserContainer from "./component/UserContainer";
+import store from "./part2/store";
+import HooksCakeContainer from "./part2/components/HooksCakeContainer";
+import HooksIceCreamContainer from "./part2/components/HooksIceCreamContainer";
+import NewCakeContainer from "./part2/components/NewCakeContainer";
+import ItemContainer from "./part2/components/ItemContainer";
+import UserContainer from "./part2/components/UserContainer";
+
+// uncomment the components to get a preview of the app.
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        {/* <UserContainer /> */}
-        <ItemContainer cake />
-        <ItemContainer />
+        <UserContainer />
+        {/* <ItemContainer cake />
+        <ItemContainer iceCream />
         <HooksCakeContainer />
         <HooksIceCreamContainer />
-        <NewCakeContainer />
+        <NewCakeContainer /> */}
       </div>
     </Provider>
   );
