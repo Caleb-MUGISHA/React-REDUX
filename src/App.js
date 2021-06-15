@@ -6,6 +6,8 @@ import HooksIceCreamContainer from "./part2/components/HooksIceCreamContainer";
 import NewCakeContainer from "./part2/components/NewCakeContainer";
 import ItemContainer from "./part2/components/ItemContainer";
 import UserContainer from "./part2/components/UserContainer";
+
+// uncomment the components to get a preview of the app.
 function App() {
   return (
     <Provider store={store}>
